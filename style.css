@@ -1,0 +1,85 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Háttérkép beállítása */
+.hero-section {
+    height: 100vh;
+    min-height: 700px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    flex-grow: 1;
+}
+
+/* Navigáció stílusok */
+.nav-link {
+    font-size: 0.9rem;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+/* Tipográfia */
+h1 {
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.btn-learn-more {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Oldalsó pöttyök */
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #fff;
+    transform: scale(1.5);
+}
+
+/* Videó előnézet kártya */
+.video-preview {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 280px;
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn i {
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
+
+/* Footer elemek */
+.hero-footer {
+    position: relative;
+    z-index: 10;
+}
