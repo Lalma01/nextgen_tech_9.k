@@ -512,6 +512,6 @@ h1 {
 }
 
 .rolam {
-    border: white;
     border-style: solid;
+    border: white;
 }
