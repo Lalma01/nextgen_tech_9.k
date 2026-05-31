@@ -512,8 +512,8 @@ h1 {
 }
 
 .rolam {
-    border: 2px solid white;
     border-radius: 25px;
+    border: 2px solid white;
     padding: 20px;
     width: 200px;
     height: 150px;
