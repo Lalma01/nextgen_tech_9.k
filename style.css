@@ -520,3 +520,56 @@ h1 { letter-spacing: -2px; line-height: 1.05; }
 }
 
 .empty-cart p { color: rgba(255,255,255,0.42); margin-bottom: 1rem; }
+
+/* Hover dropdown (desktop only) */
+@media (hover: hover) and (min-width: 992px) {
+    .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+    .nav-item.dropdown > .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+/* Back button */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-bottom: 2rem;
+}
+
+.btn-back:hover { color: #fff; }
+
+/* Responsiveness improvements */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(5,5,8,0.97);
+        border-radius: 14px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+    .dropdown-menu {
+        background: rgba(255,255,255,0.06);
+        border: none;
+        box-shadow: none;
+        padding: 0.25rem 0.5rem;
+    }
+    .hero-slide { min-height: 100svh; }
+    .display-1 { font-size: clamp(2.2rem, 8vw, 4.5rem) !important; }
+    .product-hero h1 { font-size: clamp(1.8rem, 6vw, 3rem); }
+    .section-title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
+    .page-hero { padding: 2.5rem 0 1.5rem; }
+}
+
+@media (max-width: 575px) {
+    .product-hero { padding: 1rem 0 3rem; }
+    .product-hero img { border-radius: 16px; }
+    .btn-primary { padding: 0.7rem 2rem; }
+}
