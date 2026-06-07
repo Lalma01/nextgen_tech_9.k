@@ -25,9 +25,16 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav gap-4">
+                        <ul class="navbar-nav gap-3">
                             <li class="nav-item"><a class="nav-link active" href="index.html">Főoldal</a></li>
-<li class="nav-item"><a class="nav-link" href="lehel.html">Termékek</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Termékek</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="leheltermekek.html">Lehel Termékek</a></li>
+                                    <li><a class="dropdown-item" href="materemekek.html">Mate Termékek</a></li>
+                                    <li><a class="dropdown-item" href="kazaitermekek.html">Kazai Termékek</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="rolam.html">Rólunk</a></li>
                             <li class="nav-item"><a class="nav-link" href="kazai.html">Kapcsolat</a></li>
                         </ul>
@@ -122,27 +129,22 @@
 
     <section class="container py-5">
         <h2 class="section-title">Miért minket válasszon?</h2>
-        <div class="card-grid">
-            <article class="card">
-                <div class="card-body">
-                    <i class="fas fa-rocket fa-2x mb-3"></i>
-                    <h3 class="card-title">Innovatív megoldások</h3>
-                    <p class="card-text">Legújabb technológiák alkalmazása minden projektben.</p>
-                </div>
+        <p class="section-subtitle">Három kategória, egy minőség</p>
+        <div class="card-grid mt-3">
+            <article class="feature-card">
+                <i class="fas fa-rocket fa-2x mb-3 d-block"></i>
+                <h3 class="card-title">Innovatív megoldások</h3>
+                <p class="card-text">Legújabb technológiák alkalmazása minden termékünkben.</p>
             </article>
-            <article class="card">
-                <div class="card-body">
-                    <i class="fas fa-headset fa-2x mb-3"></i>
-                    <h3 class="card-title">24/7 Támogatás</h3>
-                    <p class="card-text">Folyamatos technikai segítségnyújtás partnereink számára.</p>
-                </div>
+            <article class="feature-card">
+                <i class="fas fa-headset fa-2x mb-3 d-block"></i>
+                <h3 class="card-title">24/7 Támogatás</h3>
+                <p class="card-text">Folyamatos technikai segítségnyújtás vásárlóink számára.</p>
             </article>
-            <article class="card">
-                <div class="card-body">
-                    <i class="fas fa-shield-alt fa-2x mb-3"></i>
-                    <h3 class="card-title">Megbízhatóság</h3>
-                    <p class="card-text">Több mint 10 év tapasztalat a tech szektorban.</p>
-                </div>
+            <article class="feature-card">
+                <i class="fas fa-shield-alt fa-2x mb-3 d-block"></i>
+                <h3 class="card-title">Megbízhatóság</h3>
+                <p class="card-text">Több mint 10 év tapasztalat a tech szektorban.</p>
             </article>
         </div>
     </section>
