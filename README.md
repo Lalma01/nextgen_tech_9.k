@@ -46,46 +46,12 @@ A **Nagy Árpi Kft.** egy fiktív tech-vállalat weboldala, amelyet iskolai proj
 
 ---
 
-## 2. Fájlstruktúra
-
-```
-nextgen_tech_9.k/
-├── index.html              ← Főoldal
-├── leheltermekek.html      ← Személyes technológia kategória
-├── materemekek.html        ← Konyhai és háztartás kategória
-├── kazaitermekek.html      ← Fejlett technológia kategória
-├── mate.html               ← Rólunk oldal
-├── kazai.html              ← Kapcsolat oldal
-├── kosar.html              ← Bevásárlókosár
-├── aszf.html               ← ÁSZF
-├── adatvedelem.html        ← Adatvédelmi irányelvek
-├── style.css               ← Közös stíluslap (minden oldal használja)
-├── img/                    ← Képek mappája
-│   ├── LOGÓTESZT 2 good.png           ← Logó (fejléc + favicon)
-│   ├── Nagy Árpi KFT. Logó 2.png      ← Alternatív logó
-│   ├── Árpimosó.jpg                   ← Mosógép kép
-│   ├── Árpisütő Pro.jpg               ← Sütő Pro kép
-│   ├── chathuraanuradha-robot-8043126_1920.jpg  ← ÁrpiRobot Pro
-│   ├── pexels-atomlaborblog-844874.jpg          ← ÁrpiVac Pro
-│   ├── pexels-kindelmedia-8566424.jpg           ← ÁrpiMiniBot
-│   ├── hangszóró.jpg        ← ÁrpiEar Pro
-│   ├── hűtő.jpg             ← Árpihűtő
-│   ├── mikró.jpg            ← Árpimikró
-│   ├── porszívó.jpg         ← Árpiszívó
-│   ├── sütő.jpg             ← Árpisütő
-│   └── tv.jpg               ← ÁrpiTV Pro
-└── products/               ← Termékoldal fájlok (15 db)
-    ├── book-pro.html
-    ├── phone-pro.html
-    └── ...
-```
-
 > **Képhivatkozások:** A root-szintű oldalak `img/fájlnév.jpg` formátumot használnak.  
 > A `products/` almappában lévő oldalak `../img/fájlnév.jpg` formátumot használnak (egy szinttel feljebb lépve).
 
 ---
 
-## 3. Felhasznált technológiák
+## 2. Felhasznált technológiák
 
 ### Bootstrap 5.3.0
 A Bootstrap egy nyílt forráskódú CSS keretrendszer, amely kész, reszponzív komponenseket biztosít: rácsrendszer, navigáció, gombok, kártyák, carousel.
@@ -118,7 +84,7 @@ Minden oldal betölti ezt a közös stíluslapot. A fájl tartalmazza az összes
 
 ---
 
-## 4. A navigáció (style.css + minden HTML fájl)
+## 3. A navigáció (style.css + minden HTML fájl)
 
 A navigáció minden oldalon azonos Bootstrap Navbar szerkezetet követ:
 
@@ -172,7 +138,7 @@ A navigáció minden oldalon azonos Bootstrap Navbar szerkezetet követ:
 
 ---
 
-## 5. A CSS stíluslap felépítése (style.css)
+## 4. A CSS stíluslap felépítése (style.css)
 
 ### Sötét háttér radial gradienssel
 
@@ -253,7 +219,7 @@ A `cubic-bezier` egy egyéni gyorsulási görbe, amely természetesebb mozgást 
 
 ---
 
-## 6. A főoldal (index.html)
+## 5. A főoldal (index.html)
 
 ### Carousel (képváltó)
 Bootstrap `carousel` komponens, 3 slide-dal, 5 másodperces automatikus váltással:
@@ -298,7 +264,7 @@ Bootstrap `carousel` komponens, 3 slide-dal, 5 másodperces automatikus váltás
 
 ---
 
-## 7. Kategóriaoldalak (leheltermekek.html, materemekek.html, kazaitermekek.html)
+## 6. Kategóriaoldalak (leheltermekek.html, materemekek.html, kazaitermekek.html)
 
 Mindhárom kategóriaoldal azonos HTML sablont követ:
 
@@ -333,7 +299,7 @@ A kártya maga egy `<a>` link, így az egész kártya kattintható és a termék
 
 ---
 
-## 8. Termékoldal sablon (products/*.html)
+## 7. Termékoldal sablon (products/*.html)
 
 ```html
 <main class="main-content">
@@ -365,7 +331,7 @@ A `?product=book-pro` URL paraméter a `kosar.html` JavaScript kódjának szól:
 
 ---
 
-## 9. Bevásárlókosár rendszer (kosar.html)
+## 8. Bevásárlókosár rendszer (kosar.html)
 
 A kosár teljes egészében böngészőoldali JavaScript-tel működik – nincs szerver vagy adatbázis.
 
@@ -440,7 +406,7 @@ function changeQty(name, delta) {
 
 ---
 
-## 10. Rólunk oldal (mate.html)
+## 9. Rólunk oldal (mate.html)
 
 Két szekcióból áll:
 
@@ -455,7 +421,7 @@ Két szekcióból áll:
 
 ---
 
-## 11. Kapcsolat oldal (kazai.html)
+## 10. Kapcsolat oldal (kazai.html)
 
 Három egyforma magasságú kártya Bootstrap `row` + `align-items-stretch` + `h-100` kombinációval:
 
@@ -484,31 +450,7 @@ Az `align-items-stretch` a sorban lévő oszlopokat egyforma magasságra nyújtj
 
 ---
 
-## 12. Árképzési séma
-
-Minden termék ára **69-cel vagy 67-tel kezdődik és végződik** – ez a vállalati márkaidentitás része.
-
-| Termék | Ár |
-|--------|----|
-| ÁrpiBook Pro | 699.967 Ft |
-| ÁrpiPhone Pro | 679.969 Ft |
-| ÁrpiWatch Pro | 69.967 Ft |
-| ÁrpiPad Pro | 679.667 Ft |
-| ÁrpiEar Pro | 67.967 Ft |
-| ÁrpiTV Pro | 697.669 Ft |
-| ÁrpiRobot Pro | 6.769.967 Ft |
-| ÁrpiVac Pro | 697.767 Ft |
-| ÁrpiMiniBot | 69.769 Ft |
-| Árpiszívó | 69.969 Ft |
-| Árpimosó | 679.769 Ft |
-| Árpisütő | 697.967 Ft |
-| Árpisütő Pro | 699.669 Ft |
-| Árpihűtő | 697.769 Ft |
-| Árpimikró | 67.969 Ft |
-
----
-
-## 13. Hogyan adjunk hozzá új terméket?
+## 11. Hogyan adjunk hozzá új terméket?
 
 ### 1. lépés – Képet helyezz az `img/` mappába
 
@@ -549,7 +491,7 @@ A JavaScript `products` objektumhoz:
 
 ---
 
-## 14. Lábléc (minden oldalon azonos)
+## 12. Lábléc (minden oldalon azonos)
 
 ```html
 <footer class="site-footer">
@@ -568,11 +510,3 @@ A JavaScript `products` objektumhoz:
     </div>
 </footer>
 ```
-
----
-
-## 15. Jogi nyilatkozat
-
-Ez az oldal egy **iskolai projektmunka**. Minden termék, ár, elérhetőség és egyéb adat fiktív. A weboldal nem valódi e-kereskedelmi célokat szolgál.
-
-Készítette: **Lehel, Máté, András** – Kandó Kálmán Informatikai Technikum, 2026.
