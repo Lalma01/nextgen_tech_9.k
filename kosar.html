@@ -50,7 +50,7 @@
 
     <main class="main-content">
         <div class="container py-5">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h1 class="section-title">Kosár</h1>
                     <p class="section-subtitle">Az Ön által kiválasztott termékek</p>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4">
+                <div class="col-lg-4" id="cartSideCol">
                     <div class="cart-summary" id="cartSummary" style="display: none;">
                         <div class="summary-card">
                             <h3 class="mb-4">Rendelés összegzése</h3>
@@ -208,9 +208,9 @@
             'suto-pro':    { name: 'Árpisütő Pro',    price: 699669,  image: 'img/Árpisütő Pro.jpg' },
             'huto':        { name: 'Árpihűtő',        price: 697769,  image: 'img/hűtő.jpg' },
             'mikro':       { name: 'Árpimikró',       price: 67969,   image: 'img/mikró.jpg' },
-            'piritos':     { name: 'Árpipirítós',     price: 42676,   image: 'img/árpipirítós.png' },
-            'kontroller':  { name: 'Árpikontroller',  price: 13969,   image: 'img/Nagy Árpi controller.png' },
-            'kavefozo':    { name: 'Árpikávéfőző',    price: 369676,   image: 'img/Nagy árpi kávéfőző.png' },
+            'piritos':     { name: 'Árpipirítós',     price: 42676,   image: 'img/Árpipirítós.png' },
+            'kontroller':  { name: 'Árpikontroller',  price: 13767,   image: 'img/Nagy Árpi controller.png' },
+            'kavefozo':    { name: 'Árpikávéfőző',    price: 396767,   image: 'img/Nagy árpi kávéfőző.png' },
         };
 
         let cart = [];
@@ -236,6 +236,7 @@
             const cartItems = document.getElementById('cartItems');
             const emptyCart = document.getElementById('emptyCart');
             const cartSummary = document.getElementById('cartSummary');
+            const cartSideCol = document.getElementById('cartSideCol');
             const promoCard = document.getElementById('promoCard');
             const subtotal = document.getElementById('subtotal');
             const vat = document.getElementById('vat');
@@ -249,7 +250,9 @@
                 cartItems.style.display = 'none';
                 cartSummary.style.display = 'none';
                 promoCard.style.display = 'none';
+                cartSideCol.style.display = 'none';
             } else {
+                cartSideCol.style.display = 'block';
                 emptyCart.style.display = 'none';
                 cartItems.style.display = 'block';
                 cartSummary.style.display = 'block';
